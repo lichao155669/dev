@@ -14,27 +14,27 @@ public class DebugServerDev {
     public static void main(String[] args) throws Exception {
 
         //个人标识 每个人各自修改
-        String name = "GAN";
+        String name = "LICHAO";
 
         System.setProperty(ConfigUtils.APP_NAME_KEY, "mservice-" + name);
 
         //设置集群环境名称和配置服务器地址
-        //集群地址 todo
-        System.setProperty(ConfigUtils.CLUSTER_NAME_KEY, "sbpdev");
-        //租户地址 todo
-        System.setProperty("domain.tenantCode", "sbpdev");
-        System.setProperty("env.type", "sbpdev-test");
+        //集群地址
+        System.setProperty(ConfigUtils.CLUSTER_NAME_KEY, "ierp-cluster");
+        //租户地址
+        System.setProperty("domain.tenantCode", "ierp-tenant");
+        System.setProperty("env.type", "test");
         //服务启动地址
-        System.setProperty("domain.contextUrl", "http://127.0.0.1:8080/ierp");
+        System.setProperty("domain.contextUrl", "127.0.0.1:8080/ierp");
         //服务启动端口
         System.setProperty("JETTY_WEB_PORT", "8080");
         //mc服务器地址
-        System.setProperty("mc.server.url", "192.168.31.20:8090/mc");
-        // zookeeper地址 todo
+        System.setProperty("mc.server.url", "http://192.168.31.20:8090/mc");
+        // zookeeper地址
         System.setProperty(ConfigUtils.CONFIG_URL_KEY, "192.168.31.20:2181?user=zookeeper&password=d@f*g:SGVsbG8==8S/efRX0EtJa3d5P88i0tDsxRdGlh6nIJ7kL3nBJv1u1a2RwYXNzd29yZA==");
 
         //苍穹静态服务地址，不同环境需要换不同地址
-        System.setProperty("JETTY_WEBRES_PATH", "D:\\project\\ziyuan\\static-file-service");
+        System.setProperty("JETTY_WEBRES_PATH", "D:/project/ziyuan/static-file-service");
         //文件，图片，附件服务器 todo
         System.setProperty("fileserver", "192.168.31.20:8100/fileserver/");
         System.setProperty("imageServer.url", "192.168.31.20:8100/fileserver/");
@@ -48,7 +48,7 @@ public class DebugServerDev {
         System.setProperty("mq.consumer.register", "true");
 
         //是否输出SQL,
-        System.setProperty("db.sql.out", "false");
+        System.setProperty("db.sql.out", "true");
         //sql是否输出参数
         System.setProperty("db.sql.out.withParameter", "false");
 
