@@ -27,7 +27,8 @@ public class DebugApplication {
         
         cosmic.setConfigUrl("192.168.31.20:2181?user=zookeeper&password=d@f*g:SGVsbG8==8S/efRX0EtJa3d5P88i0tDsxRdGlh6nIJ7kL3nBJv1u1a2RwYXNzd29yZA==");
 //        cosmic.setConfigUrl("192.168.31.20:2181");
-        
+
+
 //        cosmic.setMcServerUrl("http://127.0.0.1:8090");
         cosmic.setMcServerUrl("http://192.168.31.20:8090"); 
         
