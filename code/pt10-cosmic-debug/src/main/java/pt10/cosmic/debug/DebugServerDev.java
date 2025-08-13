@@ -73,7 +73,8 @@ public class DebugServerDev {
         System.setProperty("file.encoding", "utf-8");
         //是否开启轻量级环境配置，true是轻量级；fasle 是非轻量级，用共用redis、mq组件
         System.setProperty("lightweightdeploy", "false");
-
+        System.setProperty("lightweightdeploy", "false");
+        System.setProperty ("bos.app.special.deployalone.ids", true ? " " : "qing");
         Booter.main(null);
     }
 }
