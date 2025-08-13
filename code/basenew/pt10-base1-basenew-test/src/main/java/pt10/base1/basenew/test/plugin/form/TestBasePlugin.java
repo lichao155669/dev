@@ -13,7 +13,7 @@ public class TestBasePlugin extends AbstractBasePlugIn implements Plugin {
     @Override
     public void afterCreateNewData(EventObject e) {
         super.afterCreateNewData(e);
-        Object org = getModel().getValue("org");
+        Object org = getModel().getValue("createorg");
         if(org != null){
             this.getView().showMessage(((DynamicObject)org).getString("name"));
         }
